@@ -32,7 +32,7 @@ for i in range(50):
     """, (username, email, password_hash, status))
 
 conn.commit()
-print("✅ Tạo xong 50 users!")
+print("Tạo xong 50 users!")
 
 # GÁN ROLE CHO USERS
 
@@ -51,7 +51,7 @@ for user in users:
     """, (user_id, role_id))
 
 conn.commit()
-print("✅ Gán xong roles!")
+print("Gán xong roles!")
 
 # TẠO SESSIONS GIẢ
 
@@ -71,8 +71,8 @@ for user in all_users[:20]:  # 20 sessions
     """, (session_id, user_id, expires_at))
 
 conn.commit()
-print("✅ Tạo xong sessions!")
+print("Tạo xong sessions!")
 
 cursor.close()
 conn.close()
-print("🎉 Hoàn thành tất cả!")
+print("Hoàn thành!")
