@@ -11,7 +11,7 @@ conn = mysql.connector.connect(
     port=3306,
     user="root",
     password="root",
-    database="quanlynhansucongviec"  # ← tên DB của team
+    database="quanlynhansucongviec"  
 )
 cursor = conn.cursor()
 
